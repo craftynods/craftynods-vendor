@@ -1,2 +1,10 @@
 @import "tailwindcss";
+.titleStyle {
+    @apply text-center font-bold text-4xl my-[30px];
+  }
+  
+  .SecondaryTitleStyle {
+    @apply text-2xl underline flex justify-center;
+  }
+  
 
