@@ -14,13 +14,13 @@ const DashboardCard = ({ data }: { data: any }) => {
             
         </div>
         <div className="h-[200px] w-[200px] shadow-2xl bg-orange-400 justify-center  flex items-center rounded-3xl">
-          <SiProducthunt size={35} /> + {data.products.length} Total Products
+          <SiProducthunt size={35} />&nbsp;&nbsp;   +{data.products.length} Total Products
         </div>
         <div className="h-[200px] w-[200px] shadow-2xl bg-pink-400 justify-center flex items-center rounded-3xl">
           <GiTakeMyMoney size={50} />
           <div className="">
             + ${data.orders.reduce((a: any, val: any) => a + val.total, 0)}{" "}
-            <span>
+            <span className="w-[50px]">
               - ${" "}
               {data.orders
                 .filter((o: any) => !o.isPaid)
